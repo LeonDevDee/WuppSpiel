@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Spieler
+comment0.text=\r\n\r\n
+comment1.params=name
+comment1.target=Spieler(java.lang.String)
+comment2.params=
+comment2.target=boolean\ entscheide()
+comment2.text=\r\n\ Diese\ Methode\ gibt\ zun\u00E4chst\ eine\ entscheidungsfrage\ auf\ der\ \r\n\ Konsole\ aus\ und\ gibt\ anschlie\u00DFend\ die\ Benutzereingabe\ zur\u00FCck\r\n\ @return\ entscheidung\r\n
+comment3.params=
+comment3.target=void\ spielen()
+comment4.params=
+comment4.target=java.lang.String\ gibName()
+numComments=5

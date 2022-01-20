@@ -1,0 +1,46 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.11.jar;C:\Program Files (x86)\BlueJ\lib\hamcrest-core-1.3.jar;C:\Program Files (x86)\BlueJ\lib\lang-stride.jar;U:\Eigene Dateien\bildanalyse.jar;U:\Eigene Dateien\Fachschaft Informatik\DBinJava\h2-1.4.191.jar;U:\Eigene Dateien\SchubiTool\SchubiTool\dist\lib\Schooltool.jar;U:\Eigene Dateien\SchubiTool\SchubiTool\dist\lib\jxl.jar;U:\Eigene Dateien\SchubiTool\SchubiTool\dist\lib\javax.mail.jar;U:\Eigene Dateien\SchubiTool\SchubiTool\dist\lib\commons-email-1.4.jar;U:\Eigene Dateien\Downloads\usb4java-javax-1.2.0.zip;U:\Eigene Dateien\Downloads\usb4java-1.2.0.zip;u:\Eigene Dateien\Facharbeitsausschreibungen\Tobias\jsoup.jar;C:\Program Files (x86)\BlueJ\lib\userlib\basis.jar;C:\Program Files (x86)\BlueJ\lib\userlib\commons-lang-2.6.jar;C:\Program Files (x86)\BlueJ\lib\userlib\commons-logging-1.1.1.jar;C:\Program Files (x86)\BlueJ\lib\userlib\GLOOP.jar;C:\Program Files (x86)\BlueJ\lib\userlib\gluegen-rt-natives-windows-amd64.jar;C:\Program Files (x86)\BlueJ\lib\userlib\gluegen-rt-natives-windows-i586.jar;C:\Program Files (x86)\BlueJ\lib\userlib\gluegen-rt.jar;C:\Program Files (x86)\BlueJ\lib\userlib\hsqldb.jar;C:\Program Files (x86)\BlueJ\lib\userlib\jackcess-2.1.3.jar;C:\Program Files (x86)\BlueJ\lib\userlib\jogl-all-natives-windows-amd64.jar;C:\Program Files (x86)\BlueJ\lib\userlib\jogl-all-natives-windows-i586.jar;C:\Program Files (x86)\BlueJ\lib\userlib\jogl-all.jar;C:\Program Files (x86)\BlueJ\lib\userlib\mysql-connector-java-5.1.15-bin.jar;C:\Program Files (x86)\BlueJ\lib\userlib\mysql-connector-java-5.1.38-bin.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;C:\Program Files (x86)\BlueJ\lib\userlib\QTJava.zip;C:\Program Files (x86)\BlueJ\lib\userlib\sas.jar;C:\Program Files (x86)\BlueJ\lib\userlib\sqlite-jdbc-3.8.11.2.jar;C:\Program Files (x86)\BlueJ\lib\userlib\SuMEreignis.jar;C:\Program Files (x86)\BlueJ\lib\userlib\SuMKern.jar;C:\Program Files (x86)\BlueJ\lib\userlib\SuMKomponenten.jar;C:\Program Files (x86)\BlueJ\lib\userlib\SuMMultimedia.jar;C:\Program Files (x86)\BlueJ\lib\userlib\SuMNetz.jar;C:\Program Files (x86)\BlueJ\lib\userlib\SuMSQL.jar;C:\Program Files (x86)\BlueJ\lib\userlib\SuMStrukturen.jar;C:\Program Files (x86)\BlueJ\lib\userlib\SuMWerkzeuge.jar;C:\Program Files (x86)\BlueJ\lib\userlib\ucanaccess-3.0.3.1.jar;C:\Program Files (x86)\BlueJ\lib\userlib\xpp3_min-1.1.3.4.I.jar;C:\Program Files (x86)\BlueJ\lib\userlib\xstream-1.1.2.jar;U:\Eigene Dateien\Fachschaft Informatik\WuppImpl
+-d
+U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\Spiel.java
+<---- end of javadoc command ---->
+Loading source file U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\Spiel.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_202
+Building tree for all the packages and classes...
+Generating U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\doc\Spiel.html...
+U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\Spiel.java:26: warning: no description for @param
+     * @param pPunkteCroupier
+       ^
+U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\Spiel.java:45: warning: no description for @param
+     * @param pAktuellerSpieler
+       ^
+U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\Spiel.java:120: warning: no description for @param
+     * @param pPunkteSpieler
+       ^
+Generating U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\doc\package-frame.html...
+Generating U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\doc\package-summary.html...
+Generating U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\doc\allclasses-frame.html...
+Generating U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\doc\allclasses-noframe.html...
+Generating U:\Eigene Dateien\Fachschaft Informatik\WuppImpl\doc\index.html...
+3 warnings

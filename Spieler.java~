@@ -1,0 +1,56 @@
+import java.util.Scanner;
+/**
+ *
+ */
+public class Spieler extends Person 
+{
+    /*Konstruktor*/
+    public Spieler()
+    {
+    }
+    /* Methoden */
+    /**
+     * Diese Methode gibt zunächst eine entscheidungsfrage auf der 
+     * Konsole aus und gibt anschließend die Benutzereingabe zurück
+     * @return entscheidung
+     */
+    public boolean entscheide(){
+        if(this.gibAktErgebnis()>=21)
+        {
+            return false
+        }
+        else
+        {
+
+            System.out.println("Ihr aktueller Würfelwert beträgt "+this.gibAktErgebnis()+", möchten Sie weiterspielen?");
+            Scanner sc = new Scanner(System.in);
+            String eingabe = sc.next();
+
+            if(eingabe.equals("j"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+
+    public void spielen()
+    {
+        this.setzeAktErgebnis(0);
+        for(int i  = 0; i < 3; i = i + 1)
+        {
+            wuerfel.wuerfeln();
+            this.setzeAktErgebnis(this.gibAktErgebnis()+wuerfel.gibAktWert());
+        }
+        while(entscheide() == true)
+        {
+            wuerfel.wuerfeln();
+            this.setzeAktErgebnis(this.gibAktErgebnis()+wuerfel.gibAktWert());
+        }
+    }
+
+}//Ende Klasse: Spieler
+

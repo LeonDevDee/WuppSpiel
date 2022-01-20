@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Eintrag
+comment0.text=\r\n\ Die\ Klasse\ Eintrag\ dient\ dem\ Speichern\ der\ Highscorepunkte\ mit\ Namen\r\n
+comment1.params=name\ punkte
+comment1.target=Eintrag(java.lang.String,\ int)
+comment1.text=\r\n\ Konstruktor\ der\ Klasse\ Eintrag\r\n\ @param\ punkte\ \:\ int\r\n\ @param\ name\ \:\ String\r\n
+comment2.params=
+comment2.target=int\ gibPunkte()
+comment2.text=\r\n\ Diese\ Methode\ gibt\ die\ Punkte\ des\ Eintrages\ zur\u00FCck\r\n\ \r\n\ @return\ punkte\ \:\ int\r\n
+comment3.params=
+comment3.target=java.lang.String\ gibName()
+comment3.text=\r\n\ Diese\ Methode\ gibt\ den\ Namen\ des\ Eintrages\ zur\u00FCck\r\n\ \r\n\ @return\ name\ \:\ String\r\n
+numComments=4
