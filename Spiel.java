@@ -221,7 +221,7 @@ public class Spiel
             }
 
             System.out.println("Sie haben "+spieler.gibSpielpunkte()+" erreicht!");
-            spielerAbsteigendInArrayEintragen(spieler.gibName(), spieler.gibSpielpunkte());
+            spielerAbsteigendInListEintragen(spieler.gibName(), spieler.gibSpielpunkte());
         }
         else
         {
@@ -236,10 +236,11 @@ public class Spiel
     {
         System.out.println("---- Highscorelist ----");
         int platz = 1;
+        highscore.toFirst();
         while(highscore.hasAccess())
         {
             Eintrag aktuell = highscore.getContent();
-            if(aktuell != null)
+            if(aktuell != null && platz <= 10)
             {
                 if(aktuell.gibPunkte() > 0)
                 {
@@ -247,6 +248,7 @@ public class Spiel
                 }
                 platz++;
             }
+            highscore.next();
         }
     }
 
