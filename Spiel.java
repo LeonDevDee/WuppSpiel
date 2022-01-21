@@ -17,14 +17,8 @@ public class Spiel
     /*Konstruktor*/
     public Spiel()
     {      
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nennen Sie ihren Namen!");
-        String name = sc.next();
-
-        croupier = new Croupier();
-        spieler = new Spieler(name);
-
         highscore = new List<Eintrag>();
+        starteSpiel();
     }
 
     /* Methoden */
@@ -138,6 +132,15 @@ public class Spiel
 
     public void starteSpiel()
     {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nennen Sie ihren Namen!");
+        String name = sc.next();
+
+        croupier = new Croupier();
+        spieler = new Spieler(name);
+        
+        
+        
         this.setzeAktuellerSpieler(spieler);
         while(this.ermittleGesamtsieger() == null)
         {
@@ -227,6 +230,9 @@ public class Spiel
         {
             System.out.println("Sie haben das Spiel leider mit "+spieler.gibRundengewinne()+" : "+croupier.gibRundengewinne()+" verloren!");
         }
+        
+        highscoreAusgeben();
+        starteSpiel();
     }
 
     /**
