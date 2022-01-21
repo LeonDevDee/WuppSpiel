@@ -1,5 +1,5 @@
 
-rialien zu den zentralen NRW-Abiturpruefungen im Fach Informatik ab 2017
+/*rialien zu den zentralen NRW-Abiturpruefungen im Fach Informatik ab 2017
  * </p>
  * <p>
  * Generische Klasse List<ContentType>

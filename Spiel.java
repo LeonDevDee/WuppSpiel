@@ -12,7 +12,7 @@ public class Spiel
 
     private Spieler spieler;
 
-    private Eintrag [] highscore;
+    private List<Eintrag> highscore;
 
     /*Konstruktor*/
     public Spiel()
@@ -24,7 +24,7 @@ public class Spiel
         croupier = new Croupier();
         spieler = new Spieler(name);
 
-        highscore = new Eintrag [10];
+        highscore = new List<Eintrag>();
     }
 
     /* Methoden */
@@ -250,74 +250,21 @@ public class Spiel
         }
     }
 
-    private void spielerAbsteigendInArrayEintragen(String name, int punkte)
+    private void spielerAbsteigendInListEintragen(String name, int punkte)
     {
-        int i = 0;
-        boolean eingetragen = false;
-        while(i < highscore.length && eingetragen == false)
-        {
-
-            if(highscore[i] == null)
-            {
-                highscore[i] = new Eintrag(name, punkte);
-                eingetragen = true;
-            }
-            i = i + 1;
+        highscore.toFirst();
+       
+        while(highscore.hasAccess() && highscore.getContent().gibPunkte() > punkte){
+            highscore.next();
         }
-        // Array voll! Neues Ergebnis größer als kleinster Highscore?
-        if(eingetragen == false)
-        {
-            int kleinstes = gibKleinstenWertImarray();
-            if(kleinstes < punkte)
-            {
-                int j = 0;
-                while(j < highscore.length && eingetragen == false)
-                {
-                    if(highscore[j].gibPunkte() == kleinstes)
-                    {
-                        highscore[j] = new Eintrag(name, punkte);
-                        eingetragen = true;
-                    }
-                    j = j + 1;
-                }
-            }
-        }
-        //Anschließend Array neu sortieren
-        if(eingetragen == true)
-        {
-            sortiereArray();
+        
+        if(highscore.hasAccess()){
+            highscore.insert(new Eintrag(name,punkte));
+        }else{
+            highscore.append(new Eintrag(name,punkte));
         }
     }
-
-    private int gibKleinstenWertImarray()
-    {
-        int j = 0;
-        int kleinstes = highscore[0].gibPunkte();
-        while(j < highscore.length)
-        {
-            if(kleinstes > highscore[j].gibPunkte())
-            {
-                kleinstes = highscore[j].gibPunkte(); 
-            }
-        }
-        return kleinstes;
-    }
-
-    private void sortiereArray()
-    {
-        for (int i = highscore.length-1; i>0; i--) {
-            for (int j = 1; j <= i;j ++)
-            {
-                if (highscore[j].gibPunkte()<highscore[j-1].gibPunkte())
-                {
-                    Eintrag hilf = highscore[j];
-                    highscore[j] = highscore[j-1];
-                    highscore[j-1] = hilf;
-                }
-            }
-        }
-    }
-
+    
     private int punktberechnungSpielende(int s, int v)
     {
         int erg = 0;
