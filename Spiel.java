@@ -12,7 +12,7 @@ public class Spiel
 
     private Spieler spieler;
 
-    private Eintrag [] highscore;
+    private List<Eintrag> highscore;
 
     /*Konstruktor*/
     public Spiel()
@@ -24,7 +24,7 @@ public class Spiel
         croupier = new Croupier();
         spieler = new Spieler(name);
 
-        highscore = new Eintrag [10];
+        highscore = new List<Eintrag>();
     }
 
     /* Methoden */
@@ -236,16 +236,16 @@ public class Spiel
     {
         System.out.println("---- Highscorelist ----");
         int platz = 1;
-        for(int i = 0; i < highscore.length; i = i + 1)
+        while(highscore.hasAccess())
         {
-            Eintrag aktuell = highscore[i];
+            Eintrag aktuell = highscore.getContent();
             if(aktuell != null)
             {
                 if(aktuell.gibPunkte() > 0)
                 {
                     System.out.println(platz+". "+aktuell.gibName()+" | "+aktuell.gibPunkte());
                 }
-                platz = platz + 1;
+                platz++;
             }
         }
     }
