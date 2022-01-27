@@ -15,7 +15,7 @@ public class Croupier extends Person
     public void spielen()
     {
         this.setzeAktErgebnis(0);
-        while(this.gibAktErgebnis()< 5)
+        while(this.gibAktErgebnis()< 18)
         {
             System.out.println("Der Croupier habt eine "+wuerfel.gibAktWert()+" gewürfelt. Der aktuelle Würfelwert beträgt "+this.gibAktErgebnis()+", der Croupier spielt weiter...");
             wuerfel.wuerfeln();
