@@ -13,11 +13,20 @@ public class Spiel
     private Spieler spieler;
 
     private List<Eintrag> highscore;
+    private TextdateienVerwaltung tv;
 
     /*Konstruktor*/
     public Spiel()
     {      
-        highscore = new List<Eintrag>();
+        tv = new TextdateienVerwaltung("wuppSpielHighscores.txt");
+        
+        if(tv.DateiExistiert()){
+            highscore = tv.DateiLesen();
+        }else{
+            highscore = new List<Eintrag>();
+        }
+        
+        
         starteSpiel();
     }
 
@@ -232,6 +241,7 @@ public class Spiel
         }
         
         highscoreAusgeben();
+        tv.DateiBeschreiben(highscore);
         starteSpiel();
     }
 
