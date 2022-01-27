@@ -197,7 +197,7 @@ public class Spiel
             System.out.println("Herzlichen Glückwunsch! Sie haben das Spiel mit "+spieler.gibRundengewinne()+" : "+croupier.gibRundengewinne()+" gewonnen!");
             System.out.println("Sonderpunkte werden berechnet ....");
             int sonderptmp = spieler.gibSpielpunkte();
-            punktberechnungSpielende(spieler.gibSpielpunkte(), croupier.gibSpielpunkte());
+            punktberechnungSpielende(spieler.gibRundengewinne(), croupier.gibRundengewinne());
             Random r = new Random();
 
             int akt = 0;
